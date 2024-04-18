@@ -1,0 +1,16 @@
+[web]
+198.177.23.23
+198.177.23.23
+
+[cart]
+198.177.23.23
+198.177.23.23
+
+[catalogue]
+198.177.23.23
+198.177.23.23
+
+[roboshop:children games]
+web
+cart
+catalogue
