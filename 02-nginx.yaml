@@ -4,7 +4,7 @@
   tasks:
   - name: Install ntpdate
     ansible.builtin.package:
-      name: ntpdate
+      name: nginx
       state: present
 
   - name: run nginx
