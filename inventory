@@ -4,9 +4,8 @@
 [localhost]
 localhost
 
-[localhost]
-localhost:vars
 
+[localhost:vars]
 Course="Devops with AWS"
 Trainer="siva"
 Duration="3 months"
