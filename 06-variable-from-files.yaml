@@ -1,7 +1,7 @@
 - name: task level variables
   hosts: localhost
   vars_files:
-  - variable.yaml
+  - variable.yaml #here we can add as many variable files#
   tasks: 
   - name: checking variable
     ansible.builtin.debug:
