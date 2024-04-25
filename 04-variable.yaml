@@ -2,8 +2,8 @@
   hosts: localhost
   vars: 
     Course: "Devops"
-    Trainer: "siva"
-    Duration: "3months"
+    Trainer: "SIVA"
+    Duration: "3 months"
   tasks: 
   - name: writing variables
     ansible.builtin.debug:
