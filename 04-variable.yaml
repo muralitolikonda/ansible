@@ -7,4 +7,4 @@
   tasks: 
   - name: writing variables
     ansible.builtin.debug:
-      msg: "hi i am learning {{Course}}, trainer is {{Trainer}}, duration is {{Duration}}"
+      msg: "hi i am learning {{Course}} engineering , trainer is {{Trainer}}, duration is {{Duration}}"
