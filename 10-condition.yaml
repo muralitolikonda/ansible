@@ -1,10 +1,11 @@
 - name: condition
   hosts: localhost
+  become: yes
   tasks:
   - name: check roboshop user exit or not
     ansible.builtin.command: id roboshop
     register: user
-    ignore_error: true
+    ignore_errors: true
   
   - name: print the user variable
     ansible.builtin.debug: 
