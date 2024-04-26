@@ -3,7 +3,7 @@
   tasks:
   - name: print persons
     ansible.builtin.debug:
-      msg: "Hello {{item}} " #item is a default name in ansible to denote the lists in loop in ansible
+      msg: "Hello {{item}}" #item is a default name in ansible to denote the lists in loop in ansible
       
     loop:
     - ram
