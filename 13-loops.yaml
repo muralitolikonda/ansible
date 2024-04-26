@@ -11,6 +11,10 @@
     - {name: 'nginx', state: 'present'}
     - {name: 'mysql', state: 'present'}
 
+- name: loops
+  hosts: localhost
+  become: yes
+  tasks:
   - name: start the packages
     ansible.builtin.service:
       name: mysql
