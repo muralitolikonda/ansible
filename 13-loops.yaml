@@ -4,8 +4,8 @@
   tasks:
   - name: install or not install
     ansible.builtin.package:
-      name: "{{item}}" #item is a default name in ansible to denote the lists in loop in ansible
-      state: present
+      name: "{{item.name}}" #item is a default name in ansible to denote the lists in loop in ansible
+      state: item.state
 
     loop:
     - {name: 'git', state: 'absent'}
@@ -21,3 +21,4 @@
     ansible.builtin.service:
       name: nginx
       state: started 
+      
