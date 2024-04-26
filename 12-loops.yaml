@@ -1,0 +1,13 @@
+- name: loops
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: installing packages
+    ansible.builtin.package:
+      name: "{{item}}" #item is a default name in ansible to denote the lists in loop in ansible
+      state: present
+
+    loop:
+    - git
+    - nginx
+    - postfix
